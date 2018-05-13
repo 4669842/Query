@@ -1,0 +1,57 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Baited Query</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Baited Server list
+      </h1>
+    </header>
+
+    <main>
+      
+      <p>Please enter the server id you wish to query in the URL (1-5)</p>
+      <p>
+        An example would be https://baitedquery.glitch.me/1 for server 1
+      </p>
+      <p>
+        https://baitedquery.glitch.me/:serverId:/players for currently playing users
+      </p>
+      <p>
+        https://baitedquery.glitch.me/:serverId:/map for current map on server
+      </p>
+         <p>
+        https://baitedquery.glitch.me/:serverId:/name for current name of server
+      </p>
+      <!--
+      <form>
+        <input name="server" type="text" maxlength="100" placeholder="Enter Server ID" aria-labelledby="submit-server">
+        <button type="submit" id="submit-server">Search Server</button>
+      </form>
+      
+     -->
+    </main>
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js"></script>
+
+  </body>
+</html>

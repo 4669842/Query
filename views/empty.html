@@ -1,0 +1,78 @@
+<head>
+  <style>
+  .desert {
+    position: relative;
+    height: 8rem;
+    overflow: hidden;
+}
+
+.desert .tumbleweed {
+    position: absolute;
+    top: 0;
+    left: -5rem;
+    background: url(https://camo.derpicdn.net/5142ccf0d8a7b31dded7b00cd1dc2f91d04e7cfb?url=http%3A%2F%2Fi201.photobucket.com%2Falbums%2Faa18%2FHypevosa%2FTumbleweed.gif) no-repeat center;
+    background-size: cover;
+    width: 5rem;
+    height: 5rem;
+    animation: jumping 1.5s infinite, rolling 5s linear infinite, rotating 2s linear infinite;
+
+}
+.tumbleweed:nth-child(2) {
+    animation-delay: 2.5s;
+}
+.tumbleweed:nth-child(3) {
+    animation-delay: 4s;
+}
+
+@keyframes jumping {
+    0% {
+        top: 0rem;
+        animation-timing-function: ease-in;
+    }
+    25% {
+        top: 3rem;
+        animation-timing-function: ease-out;
+    }
+    50% {
+        top: 1rem;
+        animation-timing-function: ease-in;
+    }
+    75% {
+        top: 3rem;
+        animation-timing-function: ease-out;
+    }
+    100% {
+        top: 0rem;
+        animation-timing-function: ease-in;
+    }
+}
+
+@keyframes rolling {
+    0% {
+        left: -5rem;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+  </style>
+</head>
+
+<div class="desert">
+  <h1>
+  No one on this server.
+</h1>
+  <div class="tumbleweed"></div>
+  <div class="tumbleweed"></div>
+  <div class="tumbleweed"></div>
+</div>
